@@ -6,6 +6,11 @@ import { EditComponent } from './post/edit/edit.component';
 
 export const routes: Routes = [
     {
+        path: '',
+        redirectTo: 'post/index',
+        pathMatch: 'full'
+    },
+    {
         path: 'post',
         redirectTo: 'post/index',
         pathMatch: 'full'
